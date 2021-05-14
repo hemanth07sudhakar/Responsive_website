@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Responsive website</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+<body>
+    <div id="content">
+
+        <span id="slide">
+            <a href="#" onclick="openSlide()">
+                <i class="fas fa-bars"></i>            
+            </a>
+        </span>
+    
+
+    <div id="menu" class="nav">
+        <p class="loren">Food Web</p>
+        <a href="#" class="close" onclick="closeMenu()">
+        <i class="fas fa-times"></i>
+        </a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Cuisin</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+        <a href="#">Book</a>
+
+        <button class="cart">Cart</button>
+    </div>
+
+    <p class="what">What are you <br> having for lunch?</p>
+
+    <section class="items">
+        <div class="item">
+            <fieldset class="box">
+                  <img src="./images/Maxicano_taco.jpg">
+                 <h4>Maxican Taco</h4>
+            </fieldset>
+        </div> 
+
+        <div class="item">
+            <fieldset class="box">
+                <img src="./images/download1.jpg">
+                <h4>Farmhouse pizza</h4>
+             </fieldset>
+        </div> 
+        <div class="item">
+            <fieldset class="box">
+                <img src="./images/download2.jpg">
+                <h4>Burger</h4>
+            </fieldset>
+        </div> 
+        <div class="item">
+            <fieldset class="box">
+                <img src="./images/download3.jpg">
+                <h4>Noodels</h4>
+            </fieldset>
+        </div> 
+    </section>
+
+</div>
+</body>
+<script>
+    function openSlide(){
+        document.getElementById('menu').style.width = '250px';
+        document.getElementById('content').style.marginLeft = '250px'
+    }
+
+    function closeMenu(){
+        document.getElementById('menu').style.width = '0';
+        document.getElementById('content').style.marginLeft = '0 '
+    }
+</script>
+</html>
